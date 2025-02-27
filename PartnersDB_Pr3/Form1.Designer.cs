@@ -28,12 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            panelTop = new Panel();
+            labelPartners = new Label();
+            panelFill = new Panel();
+            label2 = new Label();
+            panelTop.SuspendLayout();
+            panelFill.SuspendLayout();
+            SuspendLayout();
+            // 
+            // panelTop
+            // 
+            panelTop.Controls.Add(labelPartners);
+            panelTop.Dock = DockStyle.Top;
+            panelTop.Location = new Point(0, 0);
+            panelTop.Margin = new Padding(5);
+            panelTop.Name = "panelTop";
+            panelTop.Size = new Size(684, 70);
+            panelTop.TabIndex = 0;
+            // 
+            // labelPartners
+            // 
+            labelPartners.Dock = DockStyle.Fill;
+            labelPartners.Location = new Point(0, 0);
+            labelPartners.Margin = new Padding(5);
+            labelPartners.Name = "labelPartners";
+            labelPartners.Padding = new Padding(10);
+            labelPartners.Size = new Size(684, 70);
+            labelPartners.TabIndex = 0;
+            // 
+            // panelFill
+            // 
+            panelFill.Controls.Add(label2);
+            panelFill.Dock = DockStyle.Fill;
+            panelFill.Location = new Point(0, 70);
+            panelFill.Margin = new Padding(5);
+            panelFill.Name = "panelFill";
+            panelFill.Size = new Size(684, 491);
+            panelFill.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.Dock = DockStyle.Fill;
+            label2.Location = new Point(0, 0);
+            label2.Margin = new Padding(5);
+            label2.Name = "label2";
+            label2.Padding = new Padding(10);
+            label2.Size = new Size(684, 491);
+            label2.TabIndex = 0;
+            label2.Text = "label2";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(11F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(684, 561);
+            Controls.Add(panelFill);
+            Controls.Add(panelTop);
+            Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Margin = new Padding(5);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            panelTop.ResumeLayout(false);
+            panelFill.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Panel panelTop;
+        private Label labelPartners;
+        private Panel panelFill;
+        private Label label2;
     }
 }
